@@ -129,6 +129,7 @@ class StackInCard extends LitElement implements LovelaceCard {
         // if (element.shadowRoot.querySelector('stack-in-card')) return;
         const searchEles = element.shadowRoot.getElementById('root') || element.shadowRoot.getElementById('card');
         if (!searchEles) return;
+        element.shadowRoot.getElementById("root").setAttribute('style', 'gap:var(--vertical-stack-card-gap,var(--stack-card-gap,0px)) !important');
         this._loopChildren(searchEles as LovelaceCard, withBg);
       } else {
         this._updateStyle(card, withBg);
