@@ -40,7 +40,7 @@ class StackInCard extends LitElement implements LovelaceCard {
   }
 
   static getConfigElement() {
-    return document.createElement("hui-stack-card-editor");
+    return document.createElement('hui-stack-card-editor');
   }
 
   public setConfig(config: StackInCardConfig): void {
